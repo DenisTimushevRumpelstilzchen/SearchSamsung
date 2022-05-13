@@ -20,6 +20,7 @@ public class searchNewTest {
         open("https://yandex.ru/");
         $(".home-link_hover_inherit").click();
         $(".passp-exp-register-button").click();
-        $(".Link_weight_medium").shouldHave(text("Уже есть аккаунт"));
+        $(".Link_weight_medium").shouldHave(text("Уже есть аккаунт")).click();
+        $(".passp-route-enter-done").shouldHave(text("Войти с помощью"));
     }
 }
